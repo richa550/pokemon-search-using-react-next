@@ -24,7 +24,7 @@ export function PokemonFilterList({ url }: PokemonCard1Props) {
           const result = await response.json();
           setPokemonSearchFilterData(result?.pokemon);
         } catch (error) {
-          setError(error.message);
+          //setError(error.message);
         }
       };
       fetchData();
